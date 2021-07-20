@@ -73,9 +73,7 @@ export default class About extends Component {
                                 } else if (item.languageNameEnglish.toLowerCase().includes(this.state.searchData)) {
                                     console.log('else if ka item', item)
                                     return item
-                                } else {
-                                    return item
-                                }
+                                } 
 
                             }).map((item, id) => {
 
