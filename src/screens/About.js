@@ -66,14 +66,16 @@ export default class About extends Component {
                     <Grid container spacing={3} >
                         {items
                             .filter((item) => {
-                                if (this.state.searchData === null && this.state.searchData === "") {
+                                if (this.state.searchData === "") {
                                     console.log('if ka item', item)
                                     return item
 
                                 } else if (item.languageNameEnglish.toLowerCase().includes(this.state.searchData)) {
                                     console.log('else if ka item', item)
                                     return item
-                                } 
+                                } else if(this.state.searchData === null) {
+                                    return item
+                                }
 
                             }).map((item, id) => {
 
