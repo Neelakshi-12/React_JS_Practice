@@ -4,7 +4,8 @@ import Header from './screens/Header'
 import About from './screens/About'
 import { Footer } from './screens/Footer'
 import MainBody from './screens/MainBody'
-import { ContactUs } from './screens/ContactUs'
+import ContactUs from './screens/ContactUs'
+import MoreInfo from './screens/MoreInfo'
 
 import {
   BrowserRouter as Router,
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <ContactUs />
+          </Route>
+          <Route exact path="/moreinfo">
+            <MoreInfo />
           </Route>
         </Switch>
         <Footer />
