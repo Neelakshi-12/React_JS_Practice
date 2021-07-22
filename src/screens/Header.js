@@ -29,11 +29,14 @@ export default function Header(props) {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/moreinfo"> More Info</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/map"> Map Location</Link>
+                            </li>
                         </ul>
                         {props.searchBar ? <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form> : "no search bar"}
+                        </form> : "😶search bar not visible"}
                     </div>
                 </div>
             </nav>
